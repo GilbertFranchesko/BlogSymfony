@@ -15,7 +15,5 @@ jobs:
               run: docker-compose pull
             - name: Start services
               run: docker-compose up --build -d
-            - name: Check HTTP reachability
-              run: curl http://localhost
             - name: Check HTTPS reachability
               run: curl -k https://localhost
